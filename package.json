@@ -5,7 +5,8 @@
   "main": "lib/Slider.js",
   "files": [
     "lib",
-    "src"
+    "src",
+    "index.d.ts"
   ],
   "author": "Jean Regisser <jean.regisser@gmail.com> (https://github.com/jeanregisser)",
   "keywords": [
