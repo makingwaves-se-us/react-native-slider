@@ -2,6 +2,7 @@ declare module 'react-native-slider' {
   import { ComponentClass, PureComponent } from 'react'
 
   import {
+    Image,
     ImageSourcePropType,
     SpringAnimationConfig,
     StyleProp,
@@ -103,7 +104,7 @@ declare module 'react-native-slider' {
     /**
      * Sets an image for the thumb.
      */
-    thumbImage?: ImageSourcePropType
+    thumbImage?: React.ReactElement<Image>
 
     /**
      * Set this to true to visually see the thumb touch rect in green.
