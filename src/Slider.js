@@ -148,6 +148,12 @@ export default class Slider extends PureComponent {
      */
     thumbImage: PropTypes.object,
 
+
+    /**
+     * Additional layer between track and thumb.
+     */
+    betweenComponent: PropTypes.object,
+
     /**
      * Set this to true to visually see the thumb touch rect in green.
      */
@@ -222,6 +228,7 @@ export default class Slider extends PureComponent {
       maximumTrackTintColor,
       thumbTintColor,
       thumbImage,
+      betweenComponent,
       styles,
       style,
       trackStyle,
@@ -286,6 +293,7 @@ export default class Slider extends PureComponent {
           renderToHardwareTextureAndroid
           style={[mainStyles.track, trackStyle, minimumTrackStyle]}
         />
+        {betweenComponent}
         <Animated.View
           onLayout={this._measureThumb}
           renderToHardwareTextureAndroid
