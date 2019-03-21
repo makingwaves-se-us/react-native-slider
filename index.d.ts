@@ -106,6 +106,11 @@ declare module "react-native-slider" {
      */
     thumbImage?: React.ReactElement<Image>;
 
+   /**
+     * Additional layer between track and thumb.
+     */
+    betweenComponent?: React.ReactNode;
+
     /**
      * Set this to true to visually see the thumb touch rect in green.
      */
